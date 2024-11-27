@@ -2,10 +2,10 @@
 # Your program will output a random number between the range given by the user.
 print("print a as a large number and b as a smaller number")
 
-a = float(input("a: "))
+Larger = float(input("Larger: "))
 
-b = float(input("b: "))
+Smaller = float(input("Smaller: "))
 
-range = (a-b)
+range = (Larger-Smaller)
 
 print(range)
