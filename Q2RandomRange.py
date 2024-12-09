@@ -1,11 +1,9 @@
 # Create a program that accepts 2 numbers from the user. 
 # Your program will output a random number between the range given by the user.
-print("print a as a large number and b as a smaller number")
+import random
 
-Larger = float(input("Larger: "))
+a = float(input("Enter a: "))
+b = float(input("Enter b: "))
 
-Smaller = float(input("Smaller: "))
-
-range = (Larger-Smaller)
-
-print(range)
+random_number = random.uniform(a, b)
+print("Random number between", a, "and", b, "is:", random_number)
