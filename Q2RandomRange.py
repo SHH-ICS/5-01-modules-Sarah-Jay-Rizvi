@@ -1,9 +1,11 @@
 # Create a program that accepts 2 numbers from the user. 
 # Your program will output a random number between the range given by the user.
-import random
+from random import randint
 
-a = float(input("Enter a: "))
-b = float(input("Enter b: "))
+start = int(input("Enter the starting number: "))
+end = int(input("Enter the ending number: "))
 
-random_number = random.uniform(a, b)
-print("Random number between", a, "and", b, "is:", random_number)
+if start <= end:
+    print("Random number:", randint(start, end))
+else:
+    print("Invalid range.")
