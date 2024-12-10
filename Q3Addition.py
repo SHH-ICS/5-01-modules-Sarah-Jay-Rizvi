@@ -1,14 +1,12 @@
 # Create a program that will ask the user an addition question. 
 # The program will generate two random numbers between 1 and 100, and display them as an addition question with appropriate prompts.
-from random import randint
+import random
 
-a= randint(0, 100)
-b=randint(1, 100)
-
-for _ in range(10):
-    c = int(input(f"Enter your answer for {a} + {b}: "))
-    if c == a + b:
-        print("Correct!")
-        break
+num1 = random.randint(1, 100)
+num2 = random.randint(1, 100)
+print("What is", num1, "+", num2, "?")
+user_answer = int(input("Your answer: "))
+if user_answer == num1 + num2:
+    print("Correct!")
 else:
-    print("Correct Solutions!")
+    print("Incorrect. The answer is", num1 + num2) 
